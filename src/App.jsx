@@ -52,7 +52,7 @@ export default function App() {
       return;
     }
     try{
-      const genAI = new GoogleGenerativeAI("AIzaSyD1aMMOo6uEYo8cDQ8eWV7dVVT16QhiEg8"); 
+      const genAI = new GoogleGenerativeAI("AIzaSyALSSEOBlI4ldmu9mOwDabFH8cbFYOuR4c"); 
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
     const prompt = `Here is a long text. Please summarize it into 5 to 10 short strings. Each string should be concise, with a maximum of 4 to 5 words. Ensure the summary covers the main points or key ideas in the text.Don't include any unnecessary details like Here is a summary of the text in 5-10 short strings:Just start with the summary strings.Long Text:${text}`;
